@@ -5,15 +5,25 @@
 //  Created by mtkj on 2022/12/3.
 //
 
+#if defined(__cplusplus)
+extern "C"
+{
+#endif
+#include "media/media.h"
+#include "ffmpeg-01.h"
+#if defined(__cplusplus)
+}
+#endif
+
+
 #include <iostream>
 
-int test() {
-    return 100;
-}
+using namespace std;
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    test();
+//    ffmpeg_log();
+    dir_use();
+    log_media_info();
     return 0;
 }
