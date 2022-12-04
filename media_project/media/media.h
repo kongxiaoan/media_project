@@ -31,4 +31,9 @@ void use_stream(void);
  */
 void log_media_info(void);
 
+/**
+ 获取音频数据
+ */
+void get_audio_data(const char* src, const char* dst);
+
 #endif /* media_h */
