@@ -33,7 +33,11 @@ void log_media_info(void);
 
 /**
  获取音频数据
+ 主要操作：
+ 1. 打开一个文件
+ 2. 从里面拿出一部分数据
+ 3. 在把这部分数据放到另一个文件中
  */
-void get_audio_data(const char* src, const char* dst);
+void get_audio_data(void);
 
 #endif /* media_h */
