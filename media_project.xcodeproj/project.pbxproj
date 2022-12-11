@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2C136632945D63600FDDDC6 /* guest_room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C1365D2945D63600FDDDC6 /* guest_room.cpp */; };
+		C2C136652945D63600FDDDC6 /* room_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C136602945D63600FDDDC6 /* room_view.cpp */; };
+		C2C136662945D63600FDDDC6 /* room_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2C136612945D63600FDDDC6 /* room_manager.cpp */; };
 		C2E9578D293B57AD00A908CD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2E9578C293B57AD00A908CD /* main.cpp */; };
 		C2E95795293B640D00A908CD /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E95794293B640D00A908CD /* libavcodec.dylib */; };
 		C2E95797293B641800A908CD /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E95796293B641800A908CD /* libavformat.dylib */; };
@@ -31,6 +34,12 @@
 
 /* Begin PBXFileReference section */
 		C25FFBA1293DA4920025F571 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ffmpeg; path = ../../ffmpeg; sourceTree = "<group>"; };
+		C2C1365C2945D63600FDDDC6 /* room_view.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = room_view.hpp; path = ../../../../HotelManagementSystem/HotelManagementSystem/room_view.hpp; sourceTree = "<group>"; };
+		C2C1365D2945D63600FDDDC6 /* guest_room.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = guest_room.cpp; path = ../../../../HotelManagementSystem/HotelManagementSystem/guest_room.cpp; sourceTree = "<group>"; };
+		C2C1365E2945D63600FDDDC6 /* room_manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = room_manager.hpp; path = ../../../../HotelManagementSystem/HotelManagementSystem/room_manager.hpp; sourceTree = "<group>"; };
+		C2C136602945D63600FDDDC6 /* room_view.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = room_view.cpp; path = ../../../../HotelManagementSystem/HotelManagementSystem/room_view.cpp; sourceTree = "<group>"; };
+		C2C136612945D63600FDDDC6 /* room_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = room_manager.cpp; path = ../../../../HotelManagementSystem/HotelManagementSystem/room_manager.cpp; sourceTree = "<group>"; };
+		C2C136622945D63600FDDDC6 /* guest_room.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = guest_room.hpp; path = ../../../../HotelManagementSystem/HotelManagementSystem/guest_room.hpp; sourceTree = "<group>"; };
 		C2E95789293B57AD00A908CD /* media_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = media_project; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E9578C293B57AD00A908CD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C2E95794293B640D00A908CD /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = ../../../../../../usr/local/lib/libavcodec.dylib; sourceTree = "<group>"; };
@@ -63,6 +72,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2C1363029448A2400FDDDC6 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				C2C1365B2945D5F100FDDDC6 /* hotel_manager_system */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		C2C1365B2945D5F100FDDDC6 /* hotel_manager_system */ = {
+			isa = PBXGroup;
+			children = (
+				C2C1365D2945D63600FDDDC6 /* guest_room.cpp */,
+				C2C136622945D63600FDDDC6 /* guest_room.hpp */,
+				C2C136612945D63600FDDDC6 /* room_manager.cpp */,
+				C2C1365E2945D63600FDDDC6 /* room_manager.hpp */,
+				C2C136602945D63600FDDDC6 /* room_view.cpp */,
+				C2C1365C2945D63600FDDDC6 /* room_view.hpp */,
+			);
+			path = hotel_manager_system;
+			sourceTree = "<group>";
+		};
 		C2E95780293B57AD00A908CD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,7 @@
 		C2E9578B293B57AD00A908CD /* media_project */ = {
 			isa = PBXGroup;
 			children = (
+				C2C1363029448A2400FDDDC6 /* cpp */,
 				C25FFBA1293DA4920025F571 /* ffmpeg */,
 				C2E957CC293B7FB700A908CD /* file */,
 				C2E957CB293B7FAF00A908CD /* media */,
@@ -189,8 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C136652945D63600FDDDC6 /* room_view.cpp in Sources */,
 				C2E957CF293B7FDE00A908CD /* media.c in Sources */,
 				C2E9578D293B57AD00A908CD /* main.cpp in Sources */,
+				C2C136632945D63600FDDDC6 /* guest_room.cpp in Sources */,
+				C2C136662945D63600FDDDC6 /* room_manager.cpp in Sources */,
 				C2E957C4293B6BB500A908CD /* ffmpeg-01.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
